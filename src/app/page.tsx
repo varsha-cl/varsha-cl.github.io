@@ -10,8 +10,8 @@ export default function Home() {
     <main className="flex h-full items-center justify-between flex-col lg:flex-row">
       <div className='p-2 lg:w-2/4'>
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono lg:flex">
-          <div className="left-0 top-0 w-full justify-center from-zinc-200 lg:pb-6 lg:pt-8 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:p-4">
-            <div className='text-3xl py-3 font-bold text-slate-900 dark:text-slate-200'>
+          <div className="p-5 left-0 top-0 w-full justify-center from-zinc-200 lg:pb-6 lg:pt-8 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:p-4">
+            <div className='text-3xl font-bold text-slate-900 dark:text-slate-200'>
               I'M VARSHA!
             </div>
             <div className='font-semibold text-sky-500 dark:text-sky-400 break-words'>
