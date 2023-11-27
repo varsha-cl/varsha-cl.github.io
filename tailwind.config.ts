@@ -21,9 +21,16 @@ const config: Config = {
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat']
       },
+      colors: {
+        'primary': {
+          'light': "var(--primary)",
+          'dark': "var(--primary-dark)",
+          DEFAULT: "var(--primary)",
+        },
+      }
     },
   },
   plugins: [],
-  darkMode: ['class'],
+  darkMode: ['class']
 }
 export default config

@@ -7,10 +7,10 @@ import './sidebar.css'
 export default function SideBar() {
     const pathname = usePathname()
     return (
-        <div className='flex w-full lg:flex-col items-start justify-between sm:justify-start p-5 lg:p-10'>
-            <CustomLink isActive={pathname === '/'} text="Home" linkPath="/" />
-            <CustomLink isActive={pathname === '/education'} text="Education" linkPath="/education" />
-            <CustomLink isActive={pathname === '/work-experience'} text="Experience" linkPath="/work-experience" />
+        <div className='flex w-full lg:w-fit lg:flex-col items-start justify-start sm:justify-center p-5 lg:px-10 lg:pb-10 lg:justify-center'>
+                <CustomLink isActive={pathname === '/'} text="Home" linkPath="/" />
+                <CustomLink isActive={pathname === '/education'} text="Education" linkPath="/education" />
+                <CustomLink isActive={pathname === '/work-experience'} text="Experience" linkPath="/work-experience" />
         </div>
     )
 }
@@ -24,12 +24,12 @@ function CustomLink({
 }) {
     return (
         <Link className={`link p-2 border-b-4 lg:border-l-4 lg:border-b-0 border-transparent lg:flex ${isActive ?
-            'active font-bold border-b-sky-500 dark:border-b-sky-400 lg:border-b-transparent lg:border-l-sky-500 lg:dark:border-l-sky-400 text-xl text-sky-500 dark:text-sky-400'
+            'active font-bold border-b-primary dark:border-b-primary-dark lg:border-b-transparent lg:border-l-primary lg:dark:border-l-primary-dark text-xl text-primary dark:text-primary-dark'
             : ''}`} href={linkPath}>
             {text} {" "}
             {
                 isActive && (
-                    <span className="hidden lg:flex">
+                    <span className="hidden w-5 lg:flex">
                         -&gt;
                     </span>
                 )

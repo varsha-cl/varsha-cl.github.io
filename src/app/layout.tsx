@@ -33,14 +33,18 @@ export default function RootLayout({
       </head>
       <body className={[inter.variable, calSans.variable].join(" ")}>
         <Providers>
-          <main className='w-full min-h-screen flex flex-col font-sans antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'>
+          <div className='w-full min-h-screen flex flex-col font-sans antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'>
             <Header />
-            <div className='flex grow items-center flex-col lg:flex-row'>
-              <SideBar />
-              {children}
+            <div className='flex grow flex-col lg:flex-row'>
+              <div className='lg:fixed w-[16.5rem] h-[100%] flex items-center'>
+                <SideBar />
+              </div>
+              <div className='lg:pl-[16rem]'>
+                {children}
+              </div>
             </div>
             <Footer />
-          </main>
+          </div>
 
         </Providers>
       </body>

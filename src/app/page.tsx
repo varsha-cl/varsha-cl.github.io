@@ -14,7 +14,7 @@ export default function Home() {
             <div className='text-3xl font-bold text-slate-900 dark:text-slate-200'>
               I'M VARSHA!
             </div>
-            <div className='font-semibold text-sky-500 dark:text-sky-400 break-words'>
+            <div className='font-semibold text-primary dark:text-primary-dark break-words'>
               <TypeAnimation
                 cursor={true}
                 sequence={[
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className='flex lg:w-2/4 bg-blackh-full items-center justify-center bg-gradient-to-r bg-black-950 main-laptop-image'>
         <Image
-          src="/images/ifoto-ai_1700990897124.jpg"
+          src="/images/girl-with-laptop.jpg"
           alt="Varsha"
           width="0"
           height="0"

@@ -6,8 +6,10 @@ import { useTheme } from "next-themes"
 import { useEffect, useState } from 'react';
 import { useClickOutside } from '@/app/utils/click-away-listener';
 
-const getThemeImages = (theme: string, selected = false): string => {
-    const color = selected ? 'blue' : 'gray';
+const getThemeImages = (theme: string, currentTheme?: string, selected = false): string => {
+    const color = selected ?
+        (currentTheme === 'dark' ? 'blue' : 'indigo')
+        : 'gray';
     switch (theme) {
         case 'light':
             return `/images/sun-${color}.svg`;
@@ -21,7 +23,7 @@ const getThemeImages = (theme: string, selected = false): string => {
 export default function Header() {
 
     const [mounted, setMounted] = useState(false)
-    const { theme, setTheme } = useTheme();
+    const { theme,resolvedTheme, setTheme } = useTheme();
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -50,12 +52,12 @@ export default function Header() {
     }
 
     return (
-        <div className='p-10 pb-0'>
+        <div className='py-5 px-10'>
             <div className='flex w-full lg:flex-col items-end justify-end'>
                 <Image
                     width="30"
                     height="30"
-                    src={getThemeImages('light', true)}
+                    src={getThemeImages('light', resolvedTheme, true)}
                     alt='Switch to dark mode'
                     className='dark:hidden cursor-pointer'
                     onClick={toggleDropdown}
@@ -63,7 +65,7 @@ export default function Header() {
                 <Image
                     width="30"
                     height="30"
-                    src={getThemeImages('dark', true)}
+                    src={getThemeImages('dark', resolvedTheme, true)}
                     alt='Switch to light mode'
                     className='hidden dark:flex cursor-pointer'
                     onClick={toggleDropdown}
@@ -74,9 +76,9 @@ export default function Header() {
                     className="origin-top-right absolute right-0 mt-2 mr-10 w-32 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-slate-800 bg-white text-slate-500 dark:text-white z-20"
                     ref={dropdownRef}>
                     <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        <MenuItem handleThemeChange={handleThemeChange} theme='light' selectedTheme={currentTheme} />
-                        <MenuItem handleThemeChange={handleThemeChange} theme='dark' selectedTheme={currentTheme} />
-                        <MenuItem handleThemeChange={handleThemeChange} theme='system' selectedTheme={currentTheme} />
+                        <MenuItem handleThemeChange={handleThemeChange} theme='light' selectedTheme={currentTheme} resolvedTheme={resolvedTheme}/>
+                        <MenuItem handleThemeChange={handleThemeChange} theme='dark' selectedTheme={currentTheme}  resolvedTheme={resolvedTheme}/>
+                        <MenuItem handleThemeChange={handleThemeChange} theme='system' selectedTheme={currentTheme}  resolvedTheme={resolvedTheme} />
                     </ul>
                 </div>
             )}
@@ -86,29 +88,29 @@ export default function Header() {
 
 
 function MenuItem({
-    handleThemeChange, theme, selectedTheme
+    handleThemeChange, theme, selectedTheme, resolvedTheme
 }: {
     handleThemeChange: (selectedTheme: string) => void,
     theme: string,
-    selectedTheme: string
+    selectedTheme: string,
+    resolvedTheme?: string
 }) {
+    const isSelected = theme === selectedTheme
     return (
         <li>
             <a
                 href="#"
-                className="block px-4 py-2 text-sm dark:text-white text-gray-700 hover:bg-slate-50 hover:dark:bg-slate-500 hover:text-slate-500 capitalize flex"
-                onClick={() => handleThemeChange(theme)}
+                className={`block px-4 py-2 text-sm dark:text-white text-gray-700 hover:bg-slate-50 hover:dark:bg-slate-500 hover:text-slate-500 capitalize flex ${isSelected ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                onClick={() => isSelected ? () => { } : handleThemeChange(theme)}
             >
                 <Image
-                    // width={theme === "light" ? 40 : 20}
                     width={20}
                     height={20}
-                    // height={theme === "light" ? 40 : 20}
-                    src={getThemeImages(theme, theme == selectedTheme)}
+                    src={getThemeImages(theme, resolvedTheme, isSelected)}
                     alt='Switch to light mode'
-                    className='cursor-pointer pr-2 w-1/4'
+                    className={"pr-2 w-1/4"}
                 />
-                <div className={` w-3/4 ${selectedTheme === theme ? 'text-sky-500 dark:text-sky-400 font-bold' : ''}`}>
+                <div className={` w-3/4 ${isSelected ? 'text-primary dark:text-primary-dark font-bold' : ''}`}>
                     {theme}
                 </div>
             </a>
