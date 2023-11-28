@@ -10,7 +10,7 @@ export default function WorkExperience() {
             contentHeader:
                 "McKinsey & Company",
             contents: ["Engineer II", "Bengaluru, India","Senior Backend Developer: Engineered healthcare microservices, integrated AWS S3, led recruitments, and directed intranet portal development for a US Pharma client"],
-            contentImagePath: "/images/mckinsey_logo.jpeg",
+            contentImagePath: "images/mckinsey_logo.jpeg",
             contentImageSize: 50
         },
         {
@@ -18,7 +18,7 @@ export default function WorkExperience() {
             contentHeader:
                 "McKinsey & Company",
             contents: ["Engineer I", "Bengaluru, India","Senior Backend Developer: Engineered healthcare microservices, integrated AWS S3, led recruitments, and directed intranet portal development for a US Pharma client"],
-            contentImagePath: "/images/mckinsey_logo.jpeg",
+            contentImagePath: "images/mckinsey_logo.jpeg",
             contentImageSize: 50
         },
         {
@@ -26,7 +26,7 @@ export default function WorkExperience() {
             contentHeader:
                 "McKinsey & Company",
             contents: ["Junior Engineer", "Bengaluru, India","Senior Backend Developer: Engineered healthcare microservices, integrated AWS S3, led recruitments, and directed intranet portal development for a US Pharma client"],
-            contentImagePath: "/images/mckinsey_logo.jpeg",
+            contentImagePath: "images/mckinsey_logo.jpeg",
             contentImageSize: 50
         },
         {
@@ -34,14 +34,14 @@ export default function WorkExperience() {
             contentHeader:
                 "McKinsey & Company",
             contents: ["Software Intern", "Bengaluru, India","Senior Backend Developer: Engineered healthcare microservices, integrated AWS S3, led recruitments, and directed intranet portal development for a US Pharma client"],
-            contentImagePath: "/images/mckinsey_logo.jpeg",
+            contentImagePath: "images/mckinsey_logo.jpeg",
             contentImageSize: 50
         },
         {
             duration: "Aug 2016 - Aug 2020",
             contentHeader: "AirAsia Tech",
             contents: ["Software Intern", "Bengaluru, India", "Created a map-based flight search feature using JavaScript, seamlessly integrated with Google Maps, enriching user experience and visualizing AirAsia's connectivity."],
-            contentImagePath: "/images/airasiatech_logo.jpeg",
+            contentImagePath: "images/airasiatech_logo.jpeg",
             contentImageSize: 75
         }
     ];
@@ -57,14 +57,14 @@ export default function WorkExperience() {
                     <Image
                         width={50}
                         height={50}
-                        src={"/images/work-indigo.svg"}
+                        src={"images/work-indigo.svg"}
                         alt='Work'
                         className='dark:hidden'
                     />
                     <Image
                         width={50}
                         height={50}
-                        src={"/images/work.svg"}
+                        src={"images/work.svg"}
                         alt='Work'
                         className='hidden dark:flex'
                     />

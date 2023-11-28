@@ -12,11 +12,11 @@ const getThemeImages = (theme: string, currentTheme?: string, selected = false):
         : 'gray';
     switch (theme) {
         case 'light':
-            return `/images/sun-${color}.svg`;
+            return `images/sun-${color}.svg`;
         case 'dark':
-            return `/images/moon-${color}.svg`;
+            return `images/moon-${color}.svg`;
         default:
-            return `/images/system-${color}.svg`;
+            return `images/system-${color}.svg`;
     }
 }
 

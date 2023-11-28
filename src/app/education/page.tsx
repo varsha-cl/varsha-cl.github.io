@@ -10,7 +10,7 @@ export default function Education() {
             contentHeader:
                 "University of Illinois Urbana-Champaign",
             contents: ["Master's in Computer Science", "Urbana, United States"],
-            contentImagePath: "/images/UIUC-I-primary.png",
+            contentImagePath: "images/UIUC-I-primary.png",
             contentImageSize: 50
         },
         {
@@ -18,7 +18,7 @@ export default function Education() {
             contentHeader:
                 "RV College of Engineering",
             contents: ["Bachelor of Engineering in Computer Science", "Bengaluru, India", "CGPA - 9.24"],
-            contentImagePath: "/images/rvce-logo.png",
+            contentImagePath: "images/rvce-logo.png",
             contentImageSize: 75
         }
     ];
@@ -34,14 +34,14 @@ export default function Education() {
                     <Image
                         width={50}
                         height={50}
-                        src={"/images/graduation-cap-indigo.svg"}
+                        src={"images/graduation-cap-indigo.svg"}
                         alt='Education'
                         className='dark:hidden'
                     />
                     <Image
                         width={50}
                         height={50}
-                        src={"/images/graduation-cap.svg"}
+                        src={"images/graduation-cap.svg"}
                         alt='Education'
                         className='hidden dark:flex'
                     />

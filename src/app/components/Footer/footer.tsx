@@ -19,14 +19,14 @@ export default function Footer() {
                 <a href='https://www.linkedin.com/in/varshacl/' target="_blank" className='px-2'>
                     <Image
                         className="hidden dark:block"
-                        src={"/images/linkedin.svg"}
+                        src={"images/linkedin.svg"}
                         alt="LinkedIn"
                         width={40}
                         height={40}
                     />
                     <Image
                         className="dark:hidden"
-                        src={"/images/dark-linkedin.svg"}
+                        src={"images/dark-linkedin.svg"}
                         alt="LinkedIn"
                         width={40}
                         height={40}
@@ -37,14 +37,14 @@ export default function Footer() {
 
                     <Image
                         className="hidden dark:block"
-                        src={"/images/github.svg"}
+                        src={"images/github.svg"}
                         alt="Github"
                         width={40}
                         height={40}
                     />
                     <Image
                         className="dark:hidden"
-                        src={"/images/dark-github.svg"}
+                        src={"images/dark-github.svg"}
                         alt="Github"
                         width={40}
                         height={40}
@@ -54,14 +54,14 @@ export default function Footer() {
                 <a href="mailto:varshac3@illinois.edu" target="_blank" className='px-2'>
                     <Image
                         className="hidden dark:block"
-                        src={"/images/email.svg"}
+                        src={"images/email.svg"}
                         alt="Email"
                         width={40}
                         height={40}
                     />
                     <Image
                         className="dark:hidden"
-                        src={"/images/dark-email.svg"}
+                        src={"images/dark-email.svg"}
                         alt="Email"
                         width={40}
                         height={40}

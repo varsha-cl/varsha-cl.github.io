@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className='flex lg:w-2/4 bg-blackh-full items-center justify-center bg-gradient-to-r bg-black-950 main-laptop-image'>
         <Image
-          src="/images/girl-with-laptop.jpg"
+          src="images/girl-with-laptop.jpg"
           alt="Varsha"
           width="0"
           height="0"
