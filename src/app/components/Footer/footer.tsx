@@ -33,7 +33,7 @@ export default function Footer() {
                     />
                 </a>
 
-                <a href='https://github.com/varsha1998' target="_blank" className='px-2'>
+                <a href='https://github.com/varsha-cl' target="_blank" className='px-2'>
 
                     <Image
                         className="hidden dark:block"
