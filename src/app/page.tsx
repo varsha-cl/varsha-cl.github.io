@@ -12,7 +12,7 @@ export default function Home() {
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono lg:flex">
           <div className="p-5 left-0 top-0 w-full justify-center from-zinc-200 lg:pb-6 lg:pt-8 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:p-4">
             <div className='text-3xl font-bold text-slate-900 dark:text-slate-200'>
-              I'M VARSHA!
+              I&apos;M VARSHA!
             </div>
             <div className='font-semibold text-primary dark:text-primary-dark break-words'>
               <TypeAnimation
@@ -37,10 +37,10 @@ export default function Home() {
         <div className="flex flex-col place-items-start p-4">
           <div className='p-2 text-justify'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
         </div>

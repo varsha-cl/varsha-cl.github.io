@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <head>
-        <title>Varsha's Portfolio</title>
+        <title>Varsha&apos;s Portfolio</title>
         <meta name='description' content='Turning ideas into reality' />
       </head>
       <body className={[inter.variable, calSans.variable].join(" ")}>

@@ -19,7 +19,7 @@ export function useClickOutside(callback: () => void) {
     return () => {
       window?.removeEventListener("click", handleClick, { capture: true });
     };
-  }, [callback, ref.current]);
+  }, [callback]);
 
   return ref;
 }
