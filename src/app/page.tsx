@@ -16,7 +16,7 @@ export default function Home() {
             </div>
             <div className='font-semibold text-primary dark:text-primary-dark break-words'>
               <TypeAnimation
-                cursor={true}
+                cursor={false}
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
                   'FRONTEND DEVELOPER',
