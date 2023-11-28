@@ -43,4 +43,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] List the tech skills in main page
 - [ ] Add option to preview and download the resume
 - [ ] Highlight designation work experience
-- [ ] Deploy
+- [x] Deploy
