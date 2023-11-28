@@ -49,6 +49,15 @@ export default function Home() {
               }
             </div>
           </div>
+          {/* move to right */}
+          <div className='mt-10 flex items-center justify-end w-full'>
+            <div className=''>
+              Want to know more?
+            </div>
+            <a href='/resume.pdf' target="#" className='font-bold rounded p-2 ml-2 border-2 border-solid border-indigo-600 text-indigo-600 dark:border-indigo-300 dark:text-indigo-300'>
+              View Resume
+            </a>
+          </div>
         </div>
       </div>
       <div className='flex lg:w-2/4 bg-blackh-full items-center justify-center bg-gradient-to-r bg-black-950 main-laptop-image'>

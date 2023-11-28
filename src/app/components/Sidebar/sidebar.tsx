@@ -7,10 +7,10 @@ import './sidebar.css'
 export default function SideBar() {
     const pathname = usePathname()
     return (
-        <div className='flex w-full lg:w-fit lg:flex-col items-start justify-start sm:justify-center p-5 lg:px-10 lg:pb-10 lg:justify-center'>
-                <CustomLink isActive={pathname === '/'} text="Home" linkPath="/" />
-                <CustomLink isActive={pathname === '/education'} text="Education" linkPath="/education" />
-                <CustomLink isActive={pathname === '/work-experience'} text="Experience" linkPath="/work-experience" />
+        <div className='flex w-full lg:w-fit lg:flex-col items-start justify-start sm:justify-between p-5 lg:px-10 lg:pb-10 lg:justify-center'>
+            <CustomLink isActive={pathname === '/'} text="Home" linkPath="/" />
+            <CustomLink isActive={pathname === '/education'} text="Education" linkPath="/education" />
+            <CustomLink isActive={pathname === '/work-experience'} text="Experience" linkPath="/work-experience" />
         </div>
     )
 }
