@@ -11,8 +11,8 @@
   --background-end-rgb: 255, 255, 255;
   /* --primary: #1e3a8a;
    */
-  --primary: #4338ca;
-  --primary-dark: #38bdf8;
+  --primary: #0284c7; /*sky-600*/
+  --primary-dark: #38bdf8; /*sky-400*/
 }
 
 @media (prefers-color-scheme: dark) {
