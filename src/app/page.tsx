@@ -4,6 +4,7 @@ import './page.css'
 
 
 import { TypeAnimation } from 'react-type-animation';
+import { skills, summary } from './data/home';
 
 export default function Home() {
   return (
@@ -36,12 +37,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col place-items-start p-4">
           <div className='p-2 text-justify'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            {summary}
+          </div>
+          <div className='mt-10'>
+            <div className='font-bold text-xl text-primary dark:text-primary-dark'>
+              MY SKILLS
+            </div>
+            <div className='flex flex-wrap m-2'>
+              {
+                skills.map((skill, index) => <div key={index} className='text-sm p-1 px-2 bg-slate-200 m-1 rounded text-slate-600 dark:bg-slate-800 dark:text-slate-400'>{skill}</div>)
+              }
+            </div>
           </div>
         </div>
       </div>
