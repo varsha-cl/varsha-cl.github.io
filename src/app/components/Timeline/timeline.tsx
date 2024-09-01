@@ -21,15 +21,16 @@ function TimelineBlock({ data, isFirst }: { data: ITimeline, isFirst: boolean })
                 {data.duration}
             </div>
             <div className="timeline-content mx-5 flex flex-col sm:flex-row border-2 border-solid border-gray-200 dark:border-gray-700 rounded-lg bg-slate-200 dark:bg-slate-800 p-4 grow">
-                <div className='pr-2 w-[75px]'>
+                <div className='pr-2 w-max-[50px] w-min-[50px]'>
                     <Image
+                        className='object-scale-down'
                         src={data.contentImagePath}
                         width={data.contentImageSize}
                         height={data.contentImageSize}
                         alt="University logo">
                     </Image>
                 </div>
-                <div>
+                <div className='flex-1'>
                     <div className="text-lg text-gray-700 font-bold dark:text-white">
                         {data.heading}
                     </div>

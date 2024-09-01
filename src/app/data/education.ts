@@ -7,7 +7,7 @@ export const educationData: ITimeline[] = [
         subHeading: "Master's in Computer Science",
         location: "Urbana, United States",
         summary: "",
-        contentImagePath: "images/UIUC-I-primary.png",
+        contentImagePath: "images/uiuc-logo.png",
         contentImageSize: 50
     },
     {
@@ -17,6 +17,6 @@ export const educationData: ITimeline[] = [
         location: "Bengaluru, India",
         summary: "CGPA - 9.24",
         contentImagePath: "images/rvce-logo.png",
-        contentImageSize: 75
+        contentImageSize: 50
     }
 ];
