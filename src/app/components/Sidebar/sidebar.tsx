@@ -27,13 +27,13 @@ function CustomLink({
             'active font-bold border-b-primary dark:border-b-primary-dark lg:border-b-transparent lg:border-l-primary lg:dark:border-l-primary-dark text-xl text-primary dark:text-primary-dark'
             : ''}`} href={linkPath}>
             {text} {" "}
-            {
+{/*             {
                 isActive && (
                     <span className="hidden w-5 lg:flex">
                         -&gt;
                     </span>
                 )
-            }
+            } */}
         </Link>
     )
 
